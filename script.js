@@ -87,5 +87,4 @@ const removeFadeUp = () => {
     }
   }
   
-  window.addEventListener('load', removeFadeUp);
-  
+window.addEventListener('load', removeFadeUp);
