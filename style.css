@@ -87,6 +87,19 @@ body {
     transition: 0.4s ease;
 }
 
+.fade-down {
+    top: -80px;
+}
+
+.navbar {
+    background-color: #ffffff00;
+}
+
+.navbar.scrolled {
+    background-color: #191919;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .navbar-logo {
     font-family: "SF Pro Display Medium";
     font-size: 3.2rem;
@@ -113,23 +126,6 @@ body {
 
 .hamburger-menu {
     display: none;
-}
-
-.fade-down {
-    top: -80px;
-}
-
-.navbar.hidden {
-    top: -80px;
-}
-
-.navbar {
-    background-color: #ffffff00;
-}
-
-.navbar.scrolled {
-    background-color: #191919;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* hello section*/
@@ -668,6 +664,11 @@ a.link:hover i {
 
 @media(max-width: 767px) {
 
+    .disable-scroll {
+        overflow: hidden;
+        height: 100%;
+    }      
+
     /* navbar */
 
     .navbar {
@@ -679,24 +680,65 @@ a.link:hover i {
     }
 
     .navbar-nav {
-        display: none;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        height: 100vh;
+        transition: 1s ease;
+    }
+    
+    .hidden-nav {
+        transform: translateX(-100%);
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 30px 0;
+        width: 90%;
+        border-bottom: 1px solid #aaa;
+        font-size: 1.8rem;
     }
 
     .hamburger-menu {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 40px;
-        height: 20px;
+        width: 42px;
+        height: 23px;
         cursor: pointer;
     }
-
+    
     .hamburger-menu span {
         width: 100%;
-        height: 4px;
+        height: 3px;
         background-color: #fff;
         border-radius: 1px;
+        transition: 0.4s ease;
     }
+    
+    .hamburger-menu:hover span {
+        background-color: #ffc760;
+    }
+
+    .hamburger-menu.active span:first-child {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: #ffc760;
+    }
+    .hamburger-menu.active span:last-child {
+        transform: rotate(-45deg) translate(7px, -7px);
+        background-color: #ffc760;
+    }    
 
     /* hello section */
 

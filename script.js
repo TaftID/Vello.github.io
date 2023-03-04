@@ -10,21 +10,26 @@ const removeFadeDown = () => {
 window.addEventListener('load', removeFadeDown);
 
 window.addEventListener('scroll', function() {
-    const currentScrollPos = window.pageYOffset;
+  if (window.pageYOffset === 0) {
+    navbar.classList.remove('scrolled');
+  } else {
+    navbar.classList.add('scrolled');
+  }
+});
 
-    if (prevScrollpos > currentScrollPos) {
-        navbar.classList.remove('hidden');
-    } else {
-        navbar.classList.add('hidden');
-    }
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const hiddenNav = document.querySelector('.hidden-nav');
 
-    prevScrollpos = currentScrollPos;
+hamburgerMenu.addEventListener('click', function() {
+  hiddenNav.classList.toggle('hidden-nav');
+  hamburgerMenu.classList.toggle('active');
+});
 
-    if (window.pageYOffset === 0) {
-        navbar.classList.remove('scrolled');
-    } else {
-        navbar.classList.add('scrolled');
-    }
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.navbar-nav') && !event.target.closest('.hamburger-menu')) {
+    hiddenNav.classList.add('hidden-nav');
+    hamburgerMenu.classList.remove('active');
+  }
 });
 
 // increase number
