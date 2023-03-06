@@ -3,12 +3,6 @@
 const navbar = document.querySelector('.navbar');
 let prevScrollpos = window.pageYOffset;
 
-const removeFadeDown = () => {
-  navbar.classList.remove('fade-down');
-}
-
-window.addEventListener('load', removeFadeDown);
-
 window.addEventListener('scroll', function() {
   if (window.pageYOffset === 0) {
     navbar.classList.remove('scrolled');

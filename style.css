@@ -87,10 +87,6 @@ body {
     transition: 0.4s ease;
 }
 
-.fade-down {
-    top: -80px;
-}
-
 .navbar {
     background-color: #ffffff00;
 }
@@ -161,7 +157,6 @@ body {
     font-family: "SF Pro Display Regular";
     font-size: 1.4rem;
     color: #aaa;
-    transition-delay: 0.6s;
 }
 
 .hello .row .col:nth-child(1) h1 {
@@ -169,7 +164,6 @@ body {
     font-family: "SF Pro Display Regular";
     font-size: 2.2rem;
     color: #fff;
-    transition-delay: 0.4s;
 }
 
 .hello .row .col:nth-child(2) {
@@ -196,11 +190,6 @@ body {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
     color: #fff;
-}
-
-.hello .row .col .item:nth-child(2) .info h5,
-.hello .row .col .item:nth-child(2) .info p {
-    transition-delay: 0.2s;
 }
 
 .hello .row .col:nth-child(2) .item .info p {
@@ -261,7 +250,7 @@ body {
     width: 40%;
 }
 
-.history .row .col:nth-child(1) {
+.history .row .col {
     border-top: 8px solid #111;
 }
 
@@ -270,10 +259,6 @@ body {
     font-family: "SF Pro Display Regular";
     font-size: 8rem;
     color: #111;
-}
-
-.history .row .col:nth-child(2) h1 {
-    margin-top: 7px;
 }
 
 .history .row .col p {
@@ -362,7 +347,6 @@ a.link:hover i {
     font-family: "SF Pro Display Regular";
     font-size: 1.2rem;
     color: #111;
-    transition-delay: 0.2s;
 }
 
 .doc1 .row .col:nth-child(2) h3 {
@@ -472,6 +456,7 @@ a.link:hover i {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 1s ease;
 }
 
 .strengths .row .col:nth-child(2) {
@@ -480,15 +465,18 @@ a.link:hover i {
     background-position: center top;
     background-repeat: no-repeat;
     filter: brightness(110%) contrast(90%) grayscale(100%);
+    transition: 1s ease;
 }
 
 .strengths .row .col .item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 94%;
     gap: 240px;
+    width: 94%;
 }
+
+transition-delay
 
 .strengths .row .col .item  .wrap {
     display: flex;
@@ -500,12 +488,6 @@ a.link:hover i {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
     color: #fff;
-}
-
-.strengths .row .col:nth-child(2) .item .wrap .info h5,
-.strengths .row .col:nth-child(2) .item .wrap .info p,
-.strengths .row .col:nth-child(2) .item .wrap h1 {
-    transition-delay: 0.2s;
 }
 
 .strengths .row .col .item .wrap .info p {
@@ -691,11 +673,11 @@ a.link:hover i {
         justify-content: center;
         gap: 0;
         height: 100vh;
-        transition: 1s ease;
+        transition: 1.2s ease;
     }
     
     .hidden-nav {
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 
     .nav-item {
@@ -773,11 +755,6 @@ a.link:hover i {
         margin-bottom: 20px;
     }
 
-    .hello .row .col .item:nth-child(2) .info h5,
-    .hello .row .col .item:nth-child(2) .info p {
-        transition-delay: 0s;
-    }
-        
     .btn {
         width: 290px;
         height: 50px;
@@ -808,12 +785,6 @@ a.link:hover i {
         width: 90%;
     }
    
-    .history .row .col:nth-child(2) h1,
-    .history .row .col:nth-child(2) p,
-    .history .row .col:nth-child(2) a {
-        transition-delay: 0s;
-    }
-
     /* doc1 section */
 
     .doc1 .row {
@@ -912,12 +883,6 @@ a.link:hover i {
     .strengths .row .col .item h1 {
         width: 85%;
         font-size: 2.8rem !important;
-    }
-
-    .strengths .row .col:nth-child(2) .item .wrap .info h5,
-    .strengths .row .col:nth-child(2) .item .wrap .info p,
-    .strengths .row .col:nth-child(2) .item .wrap h1 {
-        transition-delay: 0s;
     }
 
     /* footer */
