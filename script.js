@@ -12,16 +12,16 @@ window.addEventListener('scroll', function() {
 });
 
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const hiddenNav = document.querySelector('.hidden-nav');
+const navbarNav = document.querySelector('.navbar-nav');
 
 hamburgerMenu.addEventListener('click', function() {
-  hiddenNav.classList.toggle('hidden-nav');
+  navbarNav.classList.toggle('show-nav');
   hamburgerMenu.classList.toggle('active');
 });
 
 document.addEventListener('click', function(event) {
   if (!event.target.closest('.navbar-nav') && !event.target.closest('.hamburger-menu')) {
-    hiddenNav.classList.add('hidden-nav');
+    navbarNav.classList.remove('show-nav');
     hamburgerMenu.classList.remove('active');
   }
 });

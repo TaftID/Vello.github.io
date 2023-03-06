@@ -476,8 +476,6 @@ a.link:hover i {
     width: 94%;
 }
 
-transition-delay
-
 .strengths .row .col .item  .wrap {
     display: flex;
     flex-direction: column;
@@ -673,16 +671,25 @@ transition-delay
         justify-content: center;
         gap: 0;
         height: 100vh;
+        transform: translateY(-100%);
         transition: 1.2s ease;
     }
-    
-    .hidden-nav {
-        transform: translateY(-100%);
-    }
 
+    .show-nav {
+        transform: translateY(0);
+    }
+    
     .nav-item {
         display: flex;
         justify-content: center;
+        opacity: 0;
+        transform: translateY(150px);
+        transition: 1.2s ease;
+    }
+    
+    .show-nav .nav-item {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .nav-link {
@@ -867,11 +874,11 @@ transition-delay
         width: 100%;
         justify-content: unset;
         align-items: unset;
-        padding: 50px 0;
+        padding: 60px 0;
     }
 
     .strengths .row .col .item {
-        gap: 120px;
+        gap: 140px;
         margin: 0 auto;
         width: 90%;
     }
@@ -881,7 +888,7 @@ transition-delay
     }
 
     .strengths .row .col .item h1 {
-        width: 85%;
+        width: 100%;
         font-size: 2.8rem !important;
     }
 

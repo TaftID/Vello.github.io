@@ -26,7 +26,7 @@
         <!-- navbar start -->
         <div class="navbar fade-down">
             <div class="navbar-logo">UVisual&copy;</div>
-            <ul class="navbar-nav hidden-nav">
+            <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -238,10 +238,11 @@
     <!-- init scrollreveal -->
     <script>
         ScrollReveal().clean('.clean');
+
         ScrollReveal({
-            reset: false,
+            reset: true,
             distance: '70px',
-            duration: 2000
+            duration: 1800
         });
 
         ScrollReveal().reveal('.fade-top', { origin: 'top', interval: 200 });
