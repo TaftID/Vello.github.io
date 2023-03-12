@@ -70,15 +70,3 @@ window.addEventListener('scroll', () => {
         animationDone = false;
     }
 });
-
-// fade up entrance
-
-const removeFadeUp = () => {
-    const container = document.querySelector('.container');
-  
-    if (container.classList.contains('fade-up')) {
-      container.classList.remove('fade-up');
-    }
-  }
-  
-window.addEventListener('load', removeFadeUp);

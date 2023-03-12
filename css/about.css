@@ -1,46 +1,46 @@
 @font-face {
     font-family: "SF Pro Display Black";
-    src: url(font/SF-Pro-Display-Black.ttf);
+    src: url(/font/SF-Pro-Display-Black.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Heavy";
-    src: url(font/SF-Pro-Display-Heavy.ttf);
+    src: url(/font/SF-Pro-Display-Heavy.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Bold";
-    src: url(font/SF-Pro-Display-Bold.ttf);
+    src: url(/font/SF-Pro-Display-Bold.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Semibold";
-    src: url(font/SF-Pro-Display-Semibold.ttf);
+    src: url(/font/SF-Pro-Display-Semibold.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Medium";
-    src: url(font/SF-Pro-Display-Medium.ttf);
+    src: url(/font/SF-Pro-Display-Medium.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Regular";
-    src: url(font/SF-Pro-Display-Regular.ttf);
+    src: url(/font/SF-Pro-Display-Regular.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Light";
-    src: url(font/SF-Pro-Display-Light.ttf);
+    src: url(/font/SF-Pro-Display-Light.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Thin";
-    src: url(font/SF-Pro-Display-Thin.ttf);
+    src: url(/font/SF-Pro-Display-Thin.ttf);
 }
 
 @font-face {
     font-family: "SF Pro Display Ultralight";
-    src: url(font/SF-Pro-Display-Ultralight.ttf);
+    src: url(/font/SF-Pro-Display-Ultralight.ttf);
 }
 
 *,
@@ -54,20 +54,11 @@
     list-style: none;
 }
 
-body {
-    background-color: #111;
-}
-
 .container {
     margin: 0 auto;
-    max-width: 1366px;
+    max-width: 1920px;
     height: auto;
     overflow-x: hidden;
-    transition: 0.6s ease;
-}
-
-.fade-up {
-    opacity: 0;
 }
 
 /* navbar */
@@ -81,8 +72,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1920px;
     height: 70px;
     transition: 0.4s ease;
 }
@@ -92,7 +84,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #191919;
+    background-color: #131313;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -116,8 +108,9 @@ body {
     transition: 0.2s ease;
 }
 
-.nav-link:hover {
-    color: #ffc760;
+.nav-link:hover,
+.nav-link.nav-link-active {
+    color: #ff9999;
 }
 
 .hamburger-menu {
@@ -127,17 +120,17 @@ body {
 /* hello section*/
 
 .section.hello {
-    background: url(img/hero-1.jpg);
+    background: url(/img/hero-5.jpg);
     background-size: cover;
-    background-position: 50% 25%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .hello .row {
     display: flex;
     margin: 0 auto;
-    width: 98%;
-    height: 667px;
+    width: 96%;
+    height: 100vh;
     flex-direction: column;
 }
 
@@ -146,21 +139,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     margin: 0 auto;
     width: 100%;
     height: 80%;
 }
 
-.hello .row .col:nth-child(1) h3 {
-    width: 426px;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.4rem;
-    color: #aaa;
-}
-
 .hello .row .col:nth-child(1) h1 {
-    width: 426px;
+    width: 422px;
     font-family: "SF Pro Display Regular";
     font-size: 2.2rem;
     color: #fff;
@@ -174,25 +159,25 @@ body {
     height: 20%;
 }
 
-.hello .row .col:nth-child(2) .item {
+.hello .row .col .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     width: 50%;
 }
 
-.hello .row .col:nth-child(2) .item:nth-child(1) {
+.hello .row .col .item:nth-child(1) {
     justify-content: flex-end;
 }
 
-.hello .row .col:nth-child(2) .item .info h5 {
+.hello .row .col .item .info h5 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
     color: #fff;
 }
 
-.hello .row .col:nth-child(2) .item .info p {
+.hello .row .col .item .info p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
     color: #fff;
@@ -213,7 +198,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #ffffff11;
+    background-color: #ff9999;
+    border: 1px solid #ff9999;
 }
 
 .btn p {
@@ -225,55 +211,161 @@ body {
     font-size: 1.2rem;
 }
 
+/* exp section */
 
-/* history section */
-
-.section.history {
-    background-color: #fff;
-    height: auto;
-}
-
-.history .row {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    margin: 0 auto;
-    padding: 70px 0;
-    width: 80%;
-}
-
-.history .row .col {
+.section.exp {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 0;
+    height: auto;
+    background-color: #131313;
+}
+
+.exp .row {
+    display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 96%;
+}
+
+.exp .row .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp .row:nth-child(4) {
+    gap: 80px;
+}
+
+.exp .row:nth-child(1) .col:nth-child(1) {
+    width: 50%;
+}
+
+.exp .row:nth-child(1) .col:nth-child(2) {
+    flex-direction: unset;
+    justify-content: flex-end;
+    align-items: center;
     gap: 20px;
-    width: 40%;
+    width: 50%;
 }
 
-.history .row .col {
-    border-top: 8px solid #111;
+.exp .row .col h1 {
+    margin-left: -3px;
+    font-family: "SF Pro Display Medium";
+    font-size: 3.8rem;
+    color: #fff;
+    line-height: 100%;
 }
 
-.history .row .col h1 {
-    padding-top: 29px;
+.exp .row:nth-child(2) .col:nth-child(1) {
+    width: 30%;
+}
+
+.exp .row:nth-child(2) .col:nth-child(2) {
+    width: 70%;
+}
+
+.exp .row:nth-child(4) .col:nth-child(1) {
+    gap: 20px;
+    width: 50%;
+}
+
+.exp .row:nth-child(4) .col:nth-child(2) {
+    gap: 40px;
+    width: 50%;
+}
+
+.exp .row .col img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.exp .row .col h6 {
     font-family: "SF Pro Display Regular";
-    font-size: 8rem;
-    color: #111;
+    font-size: 0.9rem;
+    color: #fff;
 }
 
-.history .row .col p {
+.exp .row:nth-child(4) .col p {
+    font-family: "SF Pro Display Regular";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.exp .row:nth-child(4) .col h4 {
     font-family: "SF Pro Display Regular";
     font-size: 1.2rem;
-    color: #111;
+    color: #fff;
+}
+
+.exp .row .col .info h5 {
+    font-family: "SF Pro Display Medium";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.exp .row .col .info p {
+    font-family: "SF Pro Display Regular";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.exp .row:nth-child(2) .col .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exp .row:nth-child(2) .col .info p {
+    width: 245px;
+}
+
+.exp .row:nth-child(3) img {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.exp .row .col .item {
+    display: flex;
+    padding-bottom: 13px;
+    border-bottom: 3px solid #444;
+}
+
+.exp .row .col .item:nth-child(2) {
+    margin-bottom: 30px;
+    padding: 13px 0;
+}
+
+.exp .row .col .item h4:nth-child(1) {
+    width: 30%;
+    font-family: "SF Pro Display Regular";
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.exp .row .col .item h4:nth-child(2) {
+    width: 70%;
+    font-family: "SF Pro Display Regular";
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.info h4 {
+    font-family: "SF Pro Display Medium";
+    font-size: 1.6rem;
+    color: #fff;
 }
 
 a.link {
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 100%;
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #111;
+    color: #fff;
     transition: 0.3s ease;
 }
 
@@ -286,226 +378,10 @@ a.link:hover i {
     transform: translateX(100px);
 }
 
-.history .row .col:nth-child(2) h1,
-.history .row .col:nth-child(2) p,
-.history .row .col:nth-child(2) a {
-    transition-delay: 0.2s;
-}
-
-/* doc1 section */
-
-.section.doc1 {
-    background-color: #ddd;
-}
-
-.doc1 .row {
-    display: flex;
-    gap: 80px;
-    margin: auto;
-    width: 98%;
-    height: 667px;
-}
-
-.doc1 .row .col {
-    display: flex;
-    width: 50%;
-    height: 100%;
-}
-
-.doc1 .row .col:nth-child(1) img {
-    margin: auto;
-    width: 90%;
-    filter: brightness(110%) contrast(110%);
-}
-
-.doc1 .row .col:nth-child(2) {
-    flex-direction: column;
-    justify-content: center;
-}
-
-.doc1 .row .col:nth-child(2) h1 {
-    width: 345px;
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #111;
-    line-height: 1;
-}
-
-.doc1 .row .col:nth-child(2) h1::before {
-    content: '01';
-    display: block;
-    margin: 0 0 20px 2px;
-    font-family: "SF Pro Display Regular";
-    font-size: 1rem;
-    color: #111;
-}
-
-.doc1 .row .col:nth-child(2) h1::after {
-    content: 'Berlin, Germany';
-    display: block;
-    margin: 20px 0;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-.doc1 .row .col:nth-child(2) h3 {
-    width: 95%;
-    font-family: "SF Pro Display Medium";
-    font-size: 1.6rem;
-    color: #111;
-}
-
-.doc1 .row .col:nth-child(2) h4 {
-    margin-top: 30px;
-    width: 95%;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-/* project section */
-
-.section.project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 75px;
-    padding: 45px 0;
-    height: auto;
-    background-color: #fff;
-}
-
-.project .row {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.project .row:nth-child(1) {
-    align-items: center;
-}
-
-.project .row .col h1 {
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #111;
-}
-
-.project .row .col .item h5 {
-    font-family: "SF Pro Display Semibold";
-    font-size: 1rem;
-    color: #111;
-}
-
-.project .row .col .item p {
-    font-size: 1rem;
-    font-family: "SF Pro Display Regular";
-    color: #111;
-}
-
-.project .row:nth-child(2) .col:nth-child(1) {
-    width: 35%;
-}
-
-.project .row:nth-child(2) .col:nth-child(2) {
-    width: 65%;
-}
-
-.project .row:nth-child(2) .col:nth-child(2) .item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 3px solid #111;
-}
-
-.project .row:nth-child(2) .col:nth-child(2) p {
-    margin-bottom: 20px;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-.project .row:nth-child(2) .col:nth-child(2) .item:nth-child(3) {
-    margin-bottom: 20px;
-}
-
-.project .row .col .item h4 {
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-/* strengths section */
-
-.strengths .row {
-    display: flex;
-    width: 100%;
-    height: 546px;
-}
-
-.strengths .row .col {
-    display: flex;
-    justify-content: flex-end;align-items: center;
-    width: 50%;
-}
-
-.strengths .row .col:nth-child(1) {
-    background: url(img/hero-4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 1s ease;
-}
-
-.strengths .row .col:nth-child(2) {
-    background: url(img/hero-3.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    filter: brightness(110%) contrast(90%) grayscale(100%);
-    transition: 1s ease;
-}
-
-.strengths .row .col .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 240px;
-    width: 94%;
-}
-
-.strengths .row .col .item  .wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.strengths .row .col .item .wrap .info h5 {
-    font-family: "SF Pro Display Semibold";
-    font-size: 1rem;
-    color: #fff;
-}
-
-.strengths .row .col .item .wrap .info p {
-    font-family: "SF Pro Display Regular";
-    font-size: 1rem;
-    color: #fff;
-}
-
-.strengths .row .col .item .wrap h1 {
-    width: 80%;
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #fff;
-    line-height: 1;
-}
-
 /* footer */
 
 .footer {
-    background-color: #191919;
+    background-color: #131313;
 }
 
 .footer .row {
@@ -565,13 +441,13 @@ a.link:hover i {
 }
 
 .footer .row .col .item ul li a:hover {
-    color: #ffc760;
+    color: #ff9999;
 }
 
 .footer .row:nth-child(2) .col {
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -605,7 +481,7 @@ a.link:hover i {
 }
 
 .footer .row .col .social a:hover i {
-    color: #ffc760;
+    color: #ff9999;
 }
 
 .footer .row .col .btn {
@@ -615,7 +491,6 @@ a.link:hover i {
 /* tablet */
 
 @media(max-width: 1023px) {
-
     /* hello section */
 
     .hello .row .col:nth-child(2) {
@@ -623,32 +498,61 @@ a.link:hover i {
     }
 
     .hello .row .col .item:nth-child(1) {
-        display: none;
-    }
-
-    .hello .row .col .item:nth-child(2) {
-        width: 100%;
+        justify-content: flex-start;
+        width: 50%;
     }
     
-    .hello .row .col:nth-child(2) .item {
+    .hello .row .col .item:nth-child(2) {
         justify-content: flex-end;
+        width: 50%;
     }
         
-    .hello .row .col .item .info {
+    .hello .row .col .item:nth-child(2) .info {
         display: none;
     }
 
+    /* exp section */
+
+    .exp .row:nth-child(1) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .exp .row:nth-child(1) .col {
+        justify-content: flex-start !important;
+        width: 100% !important;
+    }
+
+    .exp .row:nth-child(2) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .exp .row:nth-child(2) .col {
+        width: 100% !important;
+    }
+
+    .exp .row:nth-child(2) .col:nth-child(2) .item {
+        gap: 40px;
+    }
+
+    .exp .row:nth-child(4) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .exp .row:nth-child(4) .col {
+        width: 100% !important;
+    }
+
+    .exp .row .col h1 {
+        font-size: 2.8rem;
+    }
 }
 
 /* phone */
 
 @media(max-width: 767px) {
-
-    .disable-scroll {
-        overflow: hidden;
-        height: 100%;
-    }      
-
     /* navbar */
 
     .navbar {
@@ -665,7 +569,7 @@ a.link:hover i {
         top: 0;
         right: 0;
         left: 0;
-        background-color: #111;
+        background-color: #0a0a0a;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -682,13 +586,17 @@ a.link:hover i {
     .nav-item {
         display: flex;
         justify-content: center;
+        margin-top: 50px;
+        filter: blur(2px) brightness(0%);
         opacity: 0;
-        transform: translateY(150px);
+        transform: translateY(125px);
         transition: 1.2s ease;
     }
     
     .show-nav .nav-item {
+        margin-top: 0;
         opacity: 1;
+        filter: blur(0) brightness(100%);
         transform: translateY(0);
     }
 
@@ -717,24 +625,28 @@ a.link:hover i {
     }
     
     .hamburger-menu:hover span {
-        background-color: #ffc760;
+        background-color: #ff9999;
     }
 
     .hamburger-menu.active span:first-child {
         transform: rotate(45deg) translate(7px, 7px);
-        background-color: #ffc760;
+        background-color: #ff9999;
     }
     .hamburger-menu.active span:last-child {
         transform: rotate(-45deg) translate(7px, -7px);
-        background-color: #ffc760;
+        background-color: #ff9999;
     }    
 
     /* hello section */
 
+    .section.hello {
+        background-position: center left 20%;
+    }
+
     .hello .row {
         margin: 0 auto;
         width: 90%;
-        height: 800.4px;
+        height: 100vh;
     }
 
     .hello .row .col:nth-child(1) {
@@ -760,6 +672,11 @@ a.link:hover i {
     .hello .row .col:nth-child(2) .item {
         justify-content: flex-start;
         margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .hello .row .col .item:nth-child(1) {
+        display: none;
     }
 
     .btn {
@@ -767,131 +684,12 @@ a.link:hover i {
         height: 50px;
     }
 
-    /* history section */
+    /* exp section */
 
-    .history .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 40px;
+    .exp .row {
         width: 90%;
-        height: auto;
-    }
-
-    .history .row .col {
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .history .row .col h1 {
-        font-size: 6rem;
-    }
-
-    .history .row .col:nth-child(1)::before {
-        width: 90%;
-    }
-   
-    /* doc1 section */
-
-    .doc1 .row {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin: 0 auto;
-        width: 90%;
-        height: auto;
-    }
-
-    .doc1 .row .col {
-        padding: 7% 0;
-        width: 100%;
-        height: 50%;
-    }
-
-    .doc1 .row .col:nth-child(1) img {
-        width: 100%;
-    }
-
-    .doc1 .row .col:nth-child(2) h1 {
-        width: 230px;
-        font-size: 2.8rem;
-    }
-
-    .doc1 .row .col:nth-child(2) h1::after {
-        font-size: 1rem;
-    }
-
-    .doc1 .row .col:nth-child(2) h3 {
-        width: 100%;
-        font-size: 1.3rem;
-    }
-
-    .doc1 .row .col:nth-child(2) h4 {
-        width: 100%;
-        font-size: 1.2rem;
     }
     
-    /* project section */
-
-    .section.project {
-        gap: 50px;
-    }
-
-    .project .row {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .project .row .col h1 {
-        font-size: 2.8rem;
-        line-height: 1;
-    }
-
-    .project .row:nth-child(1) {
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .project .row:nth-child(2) {
-        gap: 30px;
-    }
-
-    .project .row:nth-child(2) .col {
-        width: 100% !important;
-    }
-
-    /* strengths section */
-
-
-
-    .strengths .row {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .strengths .row .col {
-        width: 100%;
-        justify-content: unset;
-        align-items: unset;
-        padding: 60px 0;
-    }
-
-    .strengths .row .col .item {
-        gap: 140px;
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .strengths .row .col .item .wrap {
-        gap: 50px;
-    }
-
-    .strengths .row .col .item h1 {
-        width: 100%;
-        font-size: 2.8rem !important;
-    }
-
     /* footer */
 
     .footer .row {
@@ -928,7 +726,6 @@ a.link:hover i {
     .footer .row:nth-child(2) .col:nth-child(2) {
         gap: 70px;
     }
-
 }
 
 @media (max-width: 479px) {
