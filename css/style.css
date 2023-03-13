@@ -721,7 +721,7 @@ a.link:hover i {
     /* hello section */
 
     .section.hello {
-        background: linear-gradient( #131313, #00000000 ), url(img/hero-1.2.jpg);
+        background: linear-gradient( #131313, #00000000 ), url(../img/hero-1.2.jpg);
         background-size: cover;
         background-position: center;
     }

@@ -536,6 +536,10 @@ a.link:hover i {
         gap: 40px;
     }
 
+    .exp .row:nth-child(3) img {
+        width: 100%;
+    }
+
     .exp .row:nth-child(4) {
         flex-direction: column;
         gap: 40px;
