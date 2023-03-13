@@ -120,7 +120,7 @@
 /* hello section*/
 
 .section.hello {
-    background: url(/img/hero-5.jpg);
+    background: url(../img/hero-5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
