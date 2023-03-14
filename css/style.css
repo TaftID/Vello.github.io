@@ -181,13 +181,13 @@
 .hello .row .col .item .info h5 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .hello .row .col .item .info p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .btn {
@@ -475,13 +475,13 @@ a.link:hover i {
 .strengths .row .col .item .wrap .info h5 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .strengths .row .col .item .wrap .info p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .strengths .row .col .item .wrap h1 {
@@ -525,7 +525,7 @@ a.link:hover i {
     width: 80%;
     font-family: "SF Pro Display Medium";
     font-size: 2.6rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row:nth-child(1) .col:nth-child(2) {
@@ -567,19 +567,19 @@ a.link:hover i {
 .footer .row .col .copyright p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .user h4 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .user p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .social {

@@ -174,13 +174,13 @@
 .hello .row .col .item .info h5 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .hello .row .col .item .info p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .btn {
@@ -218,7 +218,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    padding: 40px 0;
+    padding: 60px 0;
     height: auto;
     background-color: #131313;
 }
@@ -255,7 +255,7 @@
     margin-left: -3px;
     font-family: "SF Pro Display Medium";
     font-size: 3.8rem;
-    color: #fff;
+    color: #ddd;
     line-height: 100%;
 }
 
@@ -286,31 +286,31 @@
 .exp .row .col h6 {
     font-family: "SF Pro Display Regular";
     font-size: 0.9rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row:nth-child(4) .col p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row:nth-child(4) .col h4 {
     font-family: "SF Pro Display Regular";
     font-size: 1.2rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row .col .info h5 {
     font-family: "SF Pro Display Medium";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row .col .info p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row:nth-child(2) .col .info {
@@ -343,20 +343,20 @@
     width: 30%;
     font-family: "SF Pro Display Regular";
     font-size: 1.2rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .exp .row .col .item h4:nth-child(2) {
     width: 70%;
     font-family: "SF Pro Display Regular";
     font-size: 1.2rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .info h4 {
     font-family: "SF Pro Display Medium";
     font-size: 1.6rem;
-    color: #fff;
+    color: #ddd;
 }
 
 a.link {
@@ -376,6 +376,76 @@ a.link i {
 
 a.link:hover i {
     transform: translateX(100px);
+}
+
+/* doc1 section */
+
+.section.doc1 {
+    background-color: #ddd;
+}
+
+.doc1 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 96%;
+    height: 512px;
+}
+
+.doc1 .row .col {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 340px;
+    height: 440px;
+    background-color: #d4d4d4;
+    transition: 0.2s ease;
+    outline: 3px solid transparent;
+}
+
+.doc1 .row .col:hover {
+    outline: 3px solid #111;
+}
+
+.doc1 .row .col .icon {
+    height: 50%;
+}
+
+.doc1 .row .col .icon img {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+}
+
+.doc1 .row .col .item {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    border-top: 3px solid #111;
+}
+
+.doc1 .row .col .item h2 {
+    padding: 20px 0;
+    font-family: "SF Pro Display Medium";
+    font-size: 2.2rem;
+    color: #111;
+}
+
+.doc1 .row .col .item h4 {
+    font-family: "SF Pro Display Regular";
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.doc1 .row .col:nth-child(3) {
+    padding: 0;
+    overflow: hidden;
+}
+
+.doc1 .row .col:nth-child(3) img {
+    width: 110%;
 }
 
 /* footer */
@@ -412,7 +482,7 @@ a.link:hover i {
     width: 80%;
     font-family: "SF Pro Display Medium";
     font-size: 2.6rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row:nth-child(1) .col:nth-child(2) {
@@ -454,19 +524,19 @@ a.link:hover i {
 .footer .row .col .copyright p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .user h4 {
     font-family: "SF Pro Display Semibold";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .user p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #fff;
+    color: #ddd;
 }
 
 .footer .row .col .social {
@@ -551,6 +621,28 @@ a.link:hover i {
 
     .exp .row .col h1 {
         font-size: 2.8rem;
+    }
+
+    /* doc1 section */
+
+    .doc1 .row {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 0;
+        height: auto;
+    }
+
+    .doc1 .row .col {
+        width: 100%;
+    }
+
+    .doc1 .row .col:nth-child(3) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .doc1 .row .col:nth-child(3) img {
+        width: 100%;
     }
 }
 
@@ -692,6 +784,24 @@ a.link:hover i {
 
     .exp .row {
         width: 90%;
+    }
+
+    /* doc1 section */
+
+    .doc1 .row {
+        width: 90%;
+    }
+
+    .doc1 .row .col .icon {
+        height: 45%;
+    }
+
+    .doc1 .row .col .item {
+        height: 55%;
+    }
+
+    .doc1 .row .col:nth-child(3) img {
+        width: 120%;
     }
     
     /* footer */
