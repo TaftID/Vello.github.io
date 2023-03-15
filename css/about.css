@@ -54,6 +54,24 @@
     list-style: none;
 }
 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00000033;
+}
+
+body {
+    overflow: overlay;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1920px;
