@@ -65,7 +65,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #00000033;
+    background-color: #ffffff99;
 }
 
 body {
@@ -94,11 +94,8 @@ body {
     padding: 0 2%;
     max-width: 1920px;
     height: 70px;
-    transition: 0.4s ease;
-}
-
-.navbar {
     background-color: #ffffff00;
+    transition: 0.4s ease;
 }
 
 .navbar.scrolled {
@@ -520,7 +517,7 @@ a.link:hover i {
     gap: 80px;
     margin: 0 auto;
     padding: 70px 0;
-    width: 98%;
+    width: 96%;
 }
 
 .footer .row:nth-child(1) {
@@ -642,10 +639,24 @@ a.link:hover i {
         display: none;
     }
 
+    /* doc1 section */
+
+    .doc1 .row .col:nth-child(2) h1 {
+        width: 230px;
+        font-size: 2.8rem;
+    }
+
+    /* project section */
+
+    .project .row .col h1 {
+        font-size: 2.8rem;
+    }
+
     /* strengths section */
 
     .strengths .row .col .item .wrap h1 {
         width: 100%;
+        font-size: 2.8rem;
     }
 }
 
@@ -834,15 +845,6 @@ a.link:hover i {
         width: 100%;
     }
 
-    .doc1 .row .col:nth-child(2) h1 {
-        width: 230px;
-        font-size: 2.8rem;
-    }
-
-    .doc1 .row .col:nth-child(2) h1::after {
-        font-size: 1rem;
-    }
-
     .doc1 .row .col:nth-child(2) h3 {
         width: 100%;
         font-size: 1.3rem;
@@ -864,11 +866,6 @@ a.link:hover i {
     .project .row {
         flex-direction: column;
         width: 90%;
-    }
-
-    .project .row .col h1 {
-        font-size: 2.8rem;
-        line-height: 1;
     }
 
     .project .row:nth-child(1) {
@@ -906,11 +903,6 @@ a.link:hover i {
 
     .strengths .row .col .item .wrap {
         gap: 55px;
-    }
-
-    .strengths .row .col .item h1 {
-        width: 100%;
-        font-size: 2.8rem !important;
     }
 
     /* footer */

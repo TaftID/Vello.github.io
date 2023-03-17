@@ -65,7 +65,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #00000033;
+    background-color: #ffffff99;
 }
 
 body {
@@ -94,11 +94,8 @@ body {
     padding: 0 2%;
     max-width: 1920px;
     height: 70px;
-    transition: 0.4s ease;
-}
-
-.navbar {
     background-color: #ffffff00;
+    transition: 0.4s ease;
 }
 
 .navbar.scrolled {
@@ -466,6 +463,66 @@ a.link:hover i {
     width: 110%;
 }
 
+/* doc2 section */
+
+.section.doc2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 60px 0;
+    background-color: #131313;
+}
+
+.doc2 .row {
+    margin: 0 auto;
+    width: 96%;
+    height: auto;
+}
+
+.doc2 .row .col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.doc2 .row .col h6 {
+    font-family: "SF Pro Display Regular";
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.doc2 .row .col h1 {
+    margin-left: -3px;
+    font-family: "SF Pro Display Medium";
+    font-size: 3.8rem;
+    color: #ddd;
+    line-height: 100%;
+}
+
+.doc2 .row:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+}
+
+.doc2 .row:nth-child(2) .col {
+    display: flex;
+    flex-direction: unset;
+    gap: 40px;
+    width: 70%;
+}
+
+.doc2 .row .col img {
+    width: 100%;
+}
+
+.doc2 .row .col p {
+    font-family: "SF Pro Display Regular";
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
 /* footer */
 
 .footer {
@@ -477,7 +534,7 @@ a.link:hover i {
     gap: 80px;
     margin: 0 auto;
     padding: 70px 0;
-    width: 98%;
+    width: 96%;
 }
 
 .footer .row:nth-child(1) {
@@ -662,6 +719,12 @@ a.link:hover i {
     .doc1 .row .col:nth-child(3) img {
         width: 100%;
     }
+
+    /* doc2 section */
+
+    .doc2 .row .col h1 {
+        font-size: 2.8rem;
+    }
 }
 
 /* phone */
@@ -821,6 +884,16 @@ a.link:hover i {
     .doc1 .row .col:nth-child(3) img {
         width: 120%;
     }
+
+    /* doc2 section */
+
+    .doc2 .row {
+        width: 90%;
+    }
+
+    .doc2 .row:nth-child(2) .col {
+        flex-direction: column;
+    }
     
     /* footer */
 
@@ -863,5 +936,11 @@ a.link:hover i {
 @media (max-width: 479px) {
     .btn {
         width: 70%;
+    }
+
+    /* doc2 section */
+
+    .doc2 .row .col {
+        width: 100% !important;
     }
 }
