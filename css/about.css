@@ -523,6 +523,64 @@ a.link:hover i {
     color: #ddd;
 }
 
+/* doc3 section */
+
+.section.doc3 {
+    background-color: #fff;
+}
+
+.doc3 .row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 0 auto;
+    width: 96%;
+    height: 512px;
+}
+
+.doc3 .row .col {
+    display: flex;
+    margin: auto 0;
+    width: 50%;
+    height: 100%;
+}
+
+.doc3 .row .col:nth-child(1) {
+    justify-content: flex-end;
+    height: 80%;
+}
+
+.doc3 .row .col img {
+    width: 100%;
+}
+
+.doc3 .row .col:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.doc3 .row .col h1 {
+    margin-left: -3px;
+    padding-top: 20px;
+    border-top: 3px solid #111;
+    font-family: "SF Pro Display Medium";
+    font-size: 3.8rem;
+    color: #111;
+    line-height: 100%;
+}
+
+.doc3 .row .col p {
+    font-family: "SF Pro Display Regular";
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.doc3 .row .col a {
+    color: #111;
+}
+
 /* footer */
 
 .footer {
@@ -725,6 +783,12 @@ a.link:hover i {
     .doc2 .row .col h1 {
         font-size: 2.8rem;
     }
+
+    /* doc3 section */
+    
+    .doc3 .row .col h1 {
+        font-size: 2.8rem;
+    }
 }
 
 /* phone */
@@ -893,6 +957,23 @@ a.link:hover i {
 
     .doc2 .row:nth-child(2) .col {
         flex-direction: column;
+    }
+
+    /* doc3 section */
+
+    .section.doc3 {
+        padding: 60px 0;
+    }
+
+    .doc3 .row {
+        flex-direction: column;
+        gap: 60px;
+        width: 90%;
+        height: auto;
+    }
+
+    .doc3 .row .col {
+        width: 100%;
     }
     
     /* footer */
