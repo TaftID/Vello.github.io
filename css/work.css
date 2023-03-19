@@ -135,7 +135,7 @@ body {
 /* hello section*/
 
 .section.hello {
-    background: url(../img/hero-5.jpg);
+    background: linear-gradient( #00000066, #00000066 ), url(../img/hero-10.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,371 +214,160 @@ body {
 
 .btn:hover {
     background-color: #ff9999;
-    border: 1px solid #ff9999;
+    border: 1px solid #ff9999 !important;
 }
 
 .btn p {
     font-family: "SF Pro Display Regular";
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
 }
 
 .btn i {
     font-size: 1.2rem;
 }
 
-/* exp section */
+/* work section */
 
-.section.exp {
+.section.work {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    padding: 60px 0;
-    height: auto;
-    background-color: #131313;
+    background-color: #ddd;
 }
 
-.exp .row {
+.work .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     margin: 0 auto;
     width: 96%;
+    height: 768px;
 }
 
-.exp .row .col {
-    display: flex;
-    flex-direction: column;
-}
-
-.exp .row:nth-child(4) {
-    gap: 80px;
-}
-
-.exp .row:nth-child(1) .col:nth-child(1) {
+.work .row .col {
+    margin: auto 0;
     width: 50%;
+    height: 90%;
+    border: 3px solid #111;
+    transition: 0.3s ease;
 }
 
-.exp .row:nth-child(1) .col:nth-child(2) {
-    flex-direction: unset;
-    justify-content: flex-end;
+.work .row .col:hover,
+.work .row .col:hover .img {
+    background-color: #111;
+    background-size: 110% !important;
+}
+.work .row .col:hover .item .info h5,
+.work .row .col:hover .item .info p,
+.work .row .col:hover .item h1,
+.work .row .col:hover .item h5,
+.work .row .col:hover .item p,
+.work .row .col:hover .item .btn i {
+    color: #ddd;
+}
+
+.work .row .col:hover .item .btn {
+    border: 1px solid #fff;
+}
+
+.work .row .col .img {
+    display: flex;
+}
+
+.work .row .col .img a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ddd;
+}
+
+.work .row .col:nth-child(2) .img a {
+    background-color: #111;
+}
+
+.work .row .col .img a p {
+    font-size: 0.9rem;
+    font-family: "SF Pro Display Regular";
+    color: #111;
+}
+
+.work .row .col:nth-child(2) .img a p {
+    color: #ddd;
+}
+
+.work .row .col:nth-child(1) .img {
+    height: 50%;
+    background: url(../img/hero-12.jpg);
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.work .row .col:nth-child(2) .img{
+    height: 50%;
+    background: url(../img/hero-13.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 0.3s ease;
+}
+
+.work .row .col .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 90%;
+    height: 50%;
+}
+
+.work .row .col .item .data {
+    display: flex;
     align-items: center;
     gap: 10px;
-    width: 50%;
 }
 
-.exp .row .col h1 {
-    margin-left: -3px;
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #ddd;
-    line-height: 100%;
-}
-
-.exp .row:nth-child(2) .col:nth-child(1) {
-    width: 30%;
-}
-
-.exp .row:nth-child(2) .col:nth-child(2) {
-    width: 70%;
-}
-
-.exp .row:nth-child(4) .col:nth-child(1) {
-    gap: 20px;
-    width: 50%;
-}
-
-.exp .row:nth-child(4) .col:nth-child(2) {
-    gap: 40px;
-    width: 50%;
-}
-
-.exp .row .col img {
+.work .row .col .item .data img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
 
-.exp .row .col h6 {
-    font-family: "SF Pro Display Regular";
-    font-size: 0.9rem;
-    color: #ddd;
-}
-
-.exp .row:nth-child(4) .col p {
-    font-family: "SF Pro Display Regular";
-    font-size: 1rem;
-    color: #ddd;
-}
-
-.exp .row:nth-child(4) .col h4 {
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #ddd;
-}
-
-.exp .row .col .info h5 {
+.work .row .col .item .data h5 {
     font-family: "SF Pro Display Medium";
     font-size: 1rem;
-    color: #ddd;
+    color: #111;
 }
 
-.exp .row .col .info p {
+.work .row .col .item .data p {
     font-family: "SF Pro Display Regular";
     font-size: 1rem;
-    color: #ddd;
+    color: #111;
 }
 
-.exp .row:nth-child(2) .col .info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.exp .row:nth-child(2) .col .info p {
-    width: 245px;
-}
-
-.exp .row:nth-child(3) img {
-    margin: 0 auto;
-    width: 85%;
-}
-
-.exp .row .col .item {
-    display: flex;
-    padding-bottom: 13px;
-    border-bottom: 3px solid #444;
-}
-
-.exp .row .col .item:nth-child(2) {
-    margin-bottom: 30px;
-    padding: 13px 0;
-}
-
-.exp .row .col .item h4:nth-child(1) {
-    width: 30%;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #ddd;
-}
-
-.exp .row .col .item h4:nth-child(2) {
-    width: 70%;
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #ddd;
-}
-
-.info h4 {
+.work .row .col .item h1 {
     font-family: "SF Pro Display Medium";
-    font-size: 1.6rem;
-    color: #ddd;
+    font-size: 3.8rem;
+    color: #111;
+    line-height: 100%;
 }
 
-a.link {
-    display: flex;
-    align-items: center;
-    width: 100%;
+.work .row .col .item p {
     font-family: "SF Pro Display Regular";
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.work .row .col .item .btn {
+    border: 1px solid #111;
+    color: #111;
+}
+
+.work .row .col .item .btn:hover {
     color: #fff;
-    transition: 0.3s ease;
-}
-
-a.link i {
-    transform: translateX(60px);
-    transition: 0.3s ease;
-}
-
-a.link:hover i {
-    transform: translateX(100px);
-}
-
-/* doc1 section */
-
-.section.doc1 {
-    background-color: #ddd;
-}
-
-.doc1 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 0 auto;
-    width: 96%;
-    height: 512px;
-}
-
-.doc1 .row .col {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    width: 340px;
-    height: 440px;
-    background-color: #d4d4d4;
-    transition: 0.2s ease;
-    outline: 3px solid transparent;
-}
-
-.doc1 .row .col:hover {
-    outline: 3px solid #111;
-}
-
-.doc1 .row .col .icon {
-    height: 50%;
-}
-
-.doc1 .row .col .icon img {
-    width: 144px;
-    height: 144px;
-    border-radius: 50%;
-}
-
-.doc1 .row .col .item {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    border-top: 3px solid #111;
-}
-
-.doc1 .row .col .item h2 {
-    padding: 20px 0;
-    font-family: "SF Pro Display Medium";
-    font-size: 2.2rem;
-    color: #111;
-}
-
-.doc1 .row .col .item h4 {
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-.doc1 .row .col:nth-child(3) {
-    padding: 0;
-    overflow: hidden;
-}
-
-.doc1 .row .col:nth-child(3) img {
-    width: 110%;
-}
-
-/* doc2 section */
-
-.section.doc2 {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 60px 0;
-    background-color: #131313;
-}
-
-.doc2 .row {
-    margin: 0 auto;
-    width: 96%;
-    height: auto;
-}
-
-.doc2 .row .col {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.doc2 .row .col h6 {
-    font-family: "SF Pro Display Regular";
-    font-size: 0.9rem;
-    color: #ddd;
-}
-
-.doc2 .row .col h1 {
-    margin-left: -3px;
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #ddd;
-    line-height: 100%;
-}
-
-.doc2 .row:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 80px;
-}
-
-.doc2 .row:nth-child(2) .col {
-    display: flex;
-    flex-direction: unset;
-    gap: 40px;
-    width: 70%;
-}
-
-.doc2 .row .col img {
-    width: 100%;
-}
-
-.doc2 .row .col p {
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #ddd;
-}
-
-/* doc3 section */
-
-.section.doc3 {
-    background-color: #fff;
-}
-
-.doc3 .row {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    margin: 0 auto;
-    width: 96%;
-    height: 512px;
-}
-
-.doc3 .row .col {
-    display: flex;
-    margin: auto 0;
-    width: 50%;
-    height: 100%;
-}
-
-.doc3 .row .col:nth-child(1) {
-    justify-content: flex-end;
-    height: 80%;
-}
-
-.doc3 .row .col img {
-    width: 100%;
-}
-
-.doc3 .row .col:nth-child(2) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.doc3 .row .col h1 {
-    margin-left: -3px;
-    padding-top: 20px;
-    border-top: 3px solid #111;
-    font-family: "SF Pro Display Medium";
-    font-size: 3.8rem;
-    color: #111;
-    line-height: 100%;
-}
-
-.doc3 .row .col p {
-    font-family: "SF Pro Display Regular";
-    font-size: 1.2rem;
-    color: #111;
-}
-
-.doc3 .row .col a {
-    color: #111;
 }
 
 /* footer */
@@ -714,86 +503,25 @@ a.link:hover i {
         display: none;
     }
 
-    /* exp section */
+    /* work section */
 
-    .exp .row:nth-child(1) {
+    .work .row {
         flex-direction: column;
-        gap: 40px;
+        padding: 40px 0;
+        height: auto;   
     }
 
-    .exp .row:nth-child(1) .col {
-        justify-content: flex-start !important;
-        width: 100% !important;
-    }
-
-    .exp .row:nth-child(2) {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .exp .row:nth-child(2) .col {
-        width: 100% !important;
-    }
-
-    .exp .row:nth-child(2) .col:nth-child(2) .item {
-        gap: 40px;
-    }
-
-    .exp .row:nth-child(3) img {
+    .work .row .col {
         width: 100%;
+        height: 768px;
     }
 
-    .exp .row:nth-child(4) {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .exp .row:nth-child(4) .col {
-        width: 100% !important;
-    }
-
-    .exp .row .col h1 {
-        font-size: 2.8rem;
-    }
-
-    /* doc1 section */
-
-    .doc1 .row {
-        flex-direction: column;
-        gap: 30px;
-        padding: 60px 0;
-        height: auto;
-    }
-
-    .doc1 .row .col {
-        width: 100%;
-    }
-
-    .doc1 .row .col:nth-child(3) {
-        display: flex;
-        justify-content: center;
-    }
-
-    .doc1 .row .col:nth-child(3) img {
-        width: 100%;
-    }
-
-    /* doc2 section */
-
-    .doc2 .row .col h1 {
-        font-size: 2.8rem;
-    }
-
-    /* doc3 section */
-    
-    .doc3 .row .col h1 {
+    .work .row .col .item h1 {
         font-size: 2.8rem;
     }
 }
 
-/* phone */
-
-@media(max-width: 767px) {
+@media(max-width:767px) {
     /* navbar */
 
     .navbar {
@@ -880,10 +608,6 @@ a.link:hover i {
 
     /* hello section */
 
-    .section.hello {
-        background-position: center left 20%;
-    }
-
     .hello .row {
         margin: 0 auto;
         width: 90%;
@@ -920,103 +644,4 @@ a.link:hover i {
         height: 50px;
     }
 
-    /* exp section */
-
-    .exp .row {
-        width: 90%;
-    }
-
-    /* doc1 section */
-
-    .doc1 .row {
-        width: 90%;
-    }
-
-    .doc1 .row .col .icon {
-        height: 45%;
-    }
-
-    .doc1 .row .col .item {
-        height: 55%;
-    }
-
-    .doc1 .row .col:nth-child(3) img {
-        width: 120%;
-    }
-
-    /* doc2 section */
-
-    .doc2 .row {
-        width: 90%;
-    }
-
-    .doc2 .row:nth-child(2) .col {
-        flex-direction: column;
-    }
-
-    /* doc3 section */
-
-    .section.doc3 {
-        padding: 60px 0;
-    }
-
-    .doc3 .row {
-        flex-direction: column;
-        gap: 60px;
-        width: 90%;
-        height: auto;
-    }
-
-    .doc3 .row .col {
-        width: 100%;
-    }
-    
-    /* footer */
-
-    .footer .row {
-        flex-direction: column;
-        gap: 0;
-        width: 90%;
-    }
-
-    .footer .row:nth-child(2) {
-        gap: 70px;
-    }
-
-    .footer .row .col {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
-    .footer .row .col .brand h2 {
-        width: 100%;
-    }
-
-    .footer .row .col .item {
-        margin-top: 70px;
-    }
-
-    .footer .row .col .copyright {
-        margin: 0;
-    }
-
-    .footer .row:nth-child(2) .col:nth-child(1) {
-        gap: 70px;
-    }
-
-    .footer .row:nth-child(2) .col:nth-child(2) {
-        gap: 70px;
-    }
-}
-
-@media (max-width: 479px) {
-    .btn {
-        width: 70%;
-    }
-
-    /* doc2 section */
-
-    .doc2 .row .col {
-        width: 100% !important;
-    }
 }
