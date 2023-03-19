@@ -346,7 +346,7 @@ body {
 .exp .row .col .item {
     display: flex;
     padding-bottom: 13px;
-    border-bottom: 3px solid #444;
+    border-bottom: 3px solid #555;
 }
 
 .exp .row .col .item:nth-child(2) {
