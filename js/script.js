@@ -1,16 +1,4 @@
 // navbar
-
-const navbar = document.querySelector('.navbar');
-let prevScrollpos = window.pageYOffset;
-
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset === 0) {
-    navbar.classList.remove('scrolled');
-  } else {
-    navbar.classList.add('scrolled');
-  }
-});
-
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navbarNav = document.querySelector('.navbar-nav');
 
@@ -27,7 +15,6 @@ document.addEventListener('click', function(event) {
 });
 
 // increase number
-
 const historySection = document.querySelector('.history');
 const numElements = historySection.querySelectorAll('.num');
 
@@ -70,3 +57,11 @@ window.addEventListener('scroll', () => {
         animationDone = false;
     }
 });
+
+// input file
+function updateFileName() {
+  var fileInput = document.getElementById('file-input');
+  var fileLabel = document.getElementById('file-label');
+  
+  fileLabel.innerHTML = fileInput.files[0].name;
+}

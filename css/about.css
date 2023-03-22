@@ -82,7 +82,7 @@ body {
 /* navbar */
 
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -94,13 +94,7 @@ body {
     padding: 0 2%;
     max-width: 1920px;
     height: 70px;
-    background-color: #ffffff00;
     transition: 0.4s ease;
-}
-
-.navbar.scrolled {
-    background-color: #131313;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .navbar-logo {
@@ -125,7 +119,7 @@ body {
 
 .nav-link:hover,
 .nav-link.nav-link-active {
-    color: #ff9999;
+    color: orange;
 }
 
 .hamburger-menu {
@@ -213,8 +207,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #ff9999;
-    border: 1px solid #ff9999;
+    background-color: orange;
+    border: 1px solid orange;
 }
 
 .btn p {
@@ -644,7 +638,7 @@ a.link:hover i {
 }
 
 .footer .row .col .item ul li a:hover {
-    color: #ff9999;
+    color: orange;
 }
 
 .footer .row:nth-child(2) .col {
@@ -684,7 +678,7 @@ a.link:hover i {
 }
 
 .footer .row .col .social a:hover i {
-    color: #ff9999;
+    color: orange;
 }
 
 .footer .row .col .btn {
@@ -866,16 +860,16 @@ a.link:hover i {
     }
     
     .hamburger-menu:hover span {
-        background-color: #ff9999;
+        background-color: orange;
     }
 
     .hamburger-menu.active span:first-child {
         transform: rotate(45deg) translate(7px, 7px);
-        background-color: #ff9999;
+        background-color: orange;
     }
     .hamburger-menu.active span:last-child {
         transform: rotate(-45deg) translate(7px, -7px);
-        background-color: #ff9999;
+        background-color: orange;
     }    
 
     /* hello section */
