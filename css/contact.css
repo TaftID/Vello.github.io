@@ -828,6 +828,12 @@ form .btn {
         height: 50px;
     }
 
+    /* doc1 section */
+
+    .doc1 .row {
+        width: 90%;
+    }
+
     /* contact section */
 
     .contact .row {
