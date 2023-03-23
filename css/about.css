@@ -340,7 +340,7 @@ body {
 .exp .row .col .item {
     display: flex;
     padding-bottom: 13px;
-    border-bottom: 3px solid #555;
+    border-bottom: 2px solid #555;
 }
 
 .exp .row .col .item:nth-child(2) {
@@ -411,11 +411,11 @@ a.link:hover i {
     height: 440px;
     background-color: #d4d4d4;
     transition: 0.2s ease;
-    outline: 3px solid transparent;
+    outline: 2px solid transparent;
 }
 
 .doc1 .row .col:hover {
-    outline: 3px solid #111;
+    outline: 2px solid #111;
 }
 
 .doc1 .row .col .icon {
@@ -432,7 +432,7 @@ a.link:hover i {
     display: flex;
     flex-direction: column;
     height: 50%;
-    border-top: 3px solid #111;
+    border-top: 2px solid #111;
 }
 
 .doc1 .row .col .item h2 {
@@ -558,7 +558,7 @@ a.link:hover i {
 .doc3 .row .col h1 {
     margin-left: -3px;
     padding-top: 20px;
-    border-top: 3px solid #111;
+    border-top: 2px solid #111;
     font-family: "SF Pro Display Medium";
     font-size: 3.8rem;
     color: #111;
