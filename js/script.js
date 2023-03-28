@@ -60,8 +60,8 @@ window.addEventListener('scroll', () => {
 
 // input file
 function updateFileName() {
-  var fileInput = document.getElementById('file-input');
+  var inputFile = document.getElementById('file');
   var fileLabel = document.getElementById('file-label');
   
-  fileLabel.innerHTML = fileInput.files[0].name;
+  fileLabel.innerHTML = inputFile.files[0].name;
 }

@@ -169,33 +169,33 @@
                         <p class="fade-left">Questions and comments are important to us, so please use the form below to contact our crew. We will reply as soon as possible.</p>
                         <p class="fade-left">Guarantee a response within 24 hours!</p>
                     </div>
-                    <form action="/upload" method="post" enctype="multipart/form-data">
+                    <form action="contact-form.php" method="post" enctype="multipart/form-data">
                         <div class="input-box">
-                            <label for="Your name" class="input-name fade-bottom">Your name</label>
-                            <input type="text" class="input-field fade-bottom" required>
+                            <label for="name" class="input-name fade-bottom">Your name</label>
+                            <input type="text" class="input-field fade-bottom" id="name" required>
                         </div>
                         <div class="input-box">
-                            <label for="Email" class="input-name fade-bottom">Email</label>
-                            <input type="email" class="input-field fade-bottom" required>
+                            <label for="email" class="input-name fade-bottom">Email</label>
+                            <input type="email" class="input-field fade-bottom" id="email" required>
                         </div>
                         <div class="input-box">
-                            <label for="" class="input-name fade-bottom">Position</label>
+                            <label for="position" class="input-name fade-bottom">Position</label>
                             <div class="input-select fade-bottom">
-                            <select name="" id="" required>
-                                <option value="">Choose best position</option>
-                                <option value="">Senior Product Designer</option>
-                                <option value="">Ar Director</option>
-                            </select>
+                                <select name="" id="position" required>
+                                    <option selected="true" disabled>Choose best position</option>
+                                    <option value="1">Senior Product Designer</option>
+                                    <option value="2">Ar Director</option>
+                                </select>
                             </div>
                         </div>
                         <div class="input-box">
-                            <label for="" class="input-name fade-bottom">Upload file</label>
-                            <input type="file" id="file-input" onchange="updateFileName()" required>
-                            <label for="file-input" class="input-field fade-bottom" id="file-label">Choose File / CV / Images / Documents</label>
+                            <label for="file" class="input-name fade-bottom">Upload file</label>
+                            <input type="file" id="file" onchange="updateFileName()" required>
+                            <label for="file" class="input-field fade-bottom" id="file-label">Choose File / CV / Images / Documents</label>
                         </div>
                         <div class="text-box">
-                            <label for="Your message" class="input-name fade-bottom">Your message</label>
-                            <textarea class=" fade-bottom" required></textarea>
+                            <label for="message" class="input-name fade-bottom">Your message</label>
+                            <textarea class=" fade-bottom" id="message" required></textarea>
                         </div>
                         <div class="checkbox-box">
                             <input type="checkbox" class=" fade-bottom" id="check" required>
