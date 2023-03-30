@@ -132,6 +132,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hello .row {
@@ -232,6 +233,7 @@ body {
 
 .section.history {
     background-color: #fff;
+    overflow: hidden;
 }
 
 .history .row {
@@ -294,6 +296,7 @@ a.link:hover i {
 
 .section.doc1 {
     background-color: #ddd;
+    overflow: hidden;
 }
 
 .doc1 .row {
@@ -368,6 +371,7 @@ a.link:hover i {
     width: 100%;
     height: auto;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .project .row {
@@ -435,6 +439,10 @@ a.link:hover i {
 }
 
 /* strengths section */
+
+.section.strengths {
+    overflow: hidden;
+}
 
 .strengths .row {
     display: flex;

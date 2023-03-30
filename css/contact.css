@@ -133,6 +133,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hello .row {
@@ -225,6 +226,7 @@ body {
 
 .section.doc1 {
     background-color: #ddd;
+    overflow: hidden;
 }
 
 .doc1 .row {
@@ -352,6 +354,7 @@ body {
     padding: 60px 0;
     height: auto;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .contact .row {

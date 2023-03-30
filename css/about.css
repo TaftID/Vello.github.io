@@ -133,6 +133,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hello .row {
@@ -230,6 +231,7 @@ body {
     padding: 60px 0;
     height: auto;
     background-color: #131313;
+    overflow: hidden;
 }
 
 .exp .row {
@@ -391,6 +393,7 @@ a.link:hover i {
 
 .section.doc1 {
     background-color: #ddd;
+    overflow: hidden;
 }
 
 .doc1 .row {
@@ -465,6 +468,7 @@ a.link:hover i {
     gap: 80px;
     padding: 60px 0;
     background-color: #131313;
+    overflow: hidden;
 }
 
 .doc2 .row {
@@ -521,6 +525,7 @@ a.link:hover i {
 
 .section.doc3 {
     background-color: #fff;
+    overflow: hidden;
 }
 
 .doc3 .row {
